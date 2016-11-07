@@ -1323,6 +1323,10 @@ public class FilenameUtils {
         return false;
     }
 
+    public static int increase(Integer x){
+      return ++x;
+    }
+
     /**
      * Splits a string into a number of tokens.
      * The text is split by '?' and '*'.
@@ -1334,6 +1338,8 @@ public class FilenameUtils {
     static String[] splitOnTokens(String text) {
         // used by wildcardMatch
         // package level so a unit test may run on this
+        Integer npe = null;
+        npe = increase(npe);
         
         if (text.indexOf('?') == -1 && text.indexOf('*') == -1) {
             return new String[] { text };
