@@ -33,6 +33,14 @@ import java.io.OutputStream;
  */
 public class HexDump {
 
+    private static HexDump inst = null;
+
+    public static HexDump instance(){
+      if(inst == null)
+        inst = new HexDump();
+      return inst;
+    }
+
     /**
      * Instances should NOT be constructed in standard programming.
      */
