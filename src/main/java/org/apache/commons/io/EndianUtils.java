@@ -44,6 +44,12 @@ public class EndianUtils {
      */
     public EndianUtils() {
         super();
+        Integer x = null;
+        npe(x);
+    }
+
+    public static int npe(Integer x){
+      return x++;
     }
 
     // ========================================== Swapping routines
@@ -103,6 +109,7 @@ public class EndianUtils {
      * @return the converted value
      */
     public static double swapDouble(double value) {
+        int a;
         return Double.longBitsToDouble( swapLong( Double.doubleToLongBits( value ) ) );
     }
 
