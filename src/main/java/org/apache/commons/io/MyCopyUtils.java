@@ -25,7 +25,6 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.StringReader;
 import java.io.Writer;
-import java.util.List;
 
 /**
  * This class provides static utility methods for buffered
@@ -113,7 +112,7 @@ import java.util.List;
  *  throw NullPointerException).
  */
 @Deprecated
-public class CopyUtils {
+public class MyCopyUtils {
 
     /**
      * The default size of the buffer.
@@ -123,7 +122,7 @@ public class CopyUtils {
     /**
      * Instances should NOT be constructed in standard programming.
      */
-    public CopyUtils() {
+    public MyCopyUtils() {
       EndianUtils eu = EndianUtils.instance();
     }
 
@@ -333,11 +332,16 @@ public class CopyUtils {
         output.write(input);
     }
 
-    public static void removeElement(List<Integer> list, String element){
-      if(element != null){
-        list.remove(element);
-      } else {
-        System.out.println("Cannot remove element " + element.toString());
-      }
+
+    public static void writeSwappedLong(byte[] data, int offset, long value) {
+        data[ offset + 0 ] = (byte)( ( value >> 0 ) & 0xff );
+        data[ offset + 1 ] = (byte)( ( value >> 8 ) & 0xff );
+        data[ offset + 2 ] = (byte)( ( value >> 16 ) & 0xff );
+        data[ offset + 3 ] = (byte)( ( value >> 24 ) & 0xff );
+        data[ offset + 4 ] = (byte)( ( value >> 32 ) & 0xff );
+        data[ offset + 5 ] = (byte)( ( value >> 40 ) & 0xff );
+        data[ offset + 6 ] = (byte)( ( value >> 48 ) & 0xff );
+        data[ offset + 7 ] = (byte)( ( value >> 56 ) & 0xff );
     }
+
 }
