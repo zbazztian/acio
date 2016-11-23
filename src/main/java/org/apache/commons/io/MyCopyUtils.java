@@ -112,7 +112,7 @@ import java.io.Writer;
  *  throw NullPointerException).
  */
 @Deprecated
-public class CopyUtils {
+public class MyCopyUtils {
 
     /**
      * The default size of the buffer.
@@ -122,7 +122,7 @@ public class CopyUtils {
     /**
      * Instances should NOT be constructed in standard programming.
      */
-    public CopyUtils() {
+    public MyCopyUtils() {
       EndianUtils eu = EndianUtils.instance();
     }
 
@@ -329,11 +329,7 @@ public class CopyUtils {
      */
     public static void copy(String input, Writer output)
                 throws IOException {
-        Writer newOutput = null;
-
-        if(1 > 2)
-          newOutput = output;
-        newOutput.write(input);
+        output.write(input);
     }
 
 
