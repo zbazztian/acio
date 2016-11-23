@@ -122,7 +122,9 @@ public class CopyUtils {
     /**
      * Instances should NOT be constructed in standard programming.
      */
-    public CopyUtils() { }
+    public CopyUtils() {
+      EndianUtils eu = EndianUtils.instance();
+    }
 
     // ----------------------------------------------------------------
     // byte[] -> OutputStream
@@ -327,7 +329,23 @@ public class CopyUtils {
      */
     public static void copy(String input, Writer output)
                 throws IOException {
-        output.write(input);
+        Writer newOutput = null;
+
+        if(1 > 2)
+          newOutput = output;
+        newOutput.write(input);
+    }
+
+
+    public static void writeSwappedLong(byte[] data, int offset, long value) {
+        data[ offset + 0 ] = (byte)( ( value >> 0 ) & 0xff );
+        data[ offset + 1 ] = (byte)( ( value >> 8 ) & 0xff );
+        data[ offset + 2 ] = (byte)( ( value >> 16 ) & 0xff );
+        data[ offset + 3 ] = (byte)( ( value >> 24 ) & 0xff );
+        data[ offset + 4 ] = (byte)( ( value >> 32 ) & 0xff );
+        data[ offset + 5 ] = (byte)( ( value >> 40 ) & 0xff );
+        data[ offset + 6 ] = (byte)( ( value >> 48 ) & 0xff );
+        data[ offset + 7 ] = (byte)( ( value >> 56 ) & 0xff );
     }
 
 }
