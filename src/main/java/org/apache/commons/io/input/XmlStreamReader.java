@@ -746,4 +746,19 @@ public class XmlStreamReader extends Reader {
     private static final String HTTP_EX_3 =
         "Invalid encoding, CT-MIME [{0}] CT-Enc [{1}] BOM [{2}] XML guess [{3}] XML prolog [{4}], Invalid MIME";
 
+
+    static String myGetContentTypeEncoding(String httpContentType) {
+        String encoding = null;
+        if (httpContentType != null) {
+            int i = httpContentType.indexOf(";");
+            if (i > -1) {
+                String postMime = httpContentType.substring(i + 1);
+                Matcher m = CHARSET_PATTERN.matcher(postMime);
+                encoding = (m.find()) ? m.group(1) : null;
+                encoding = (encoding != null) ? encoding.toUpperCase() : null;
+            }
+        }
+        return encoding;
+    }
+
 }
