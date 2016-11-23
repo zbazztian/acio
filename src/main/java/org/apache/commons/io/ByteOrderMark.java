@@ -41,6 +41,7 @@ public class ByteOrderMark implements Serializable {
     private final String charsetName;
     private final int[] bytes;
 
+
     /**
      * Construct a new BOM.
      *
