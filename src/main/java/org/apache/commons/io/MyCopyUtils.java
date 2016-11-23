@@ -25,7 +25,6 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.StringReader;
 import java.io.Writer;
-import java.util.List;
 
 /**
  * This class provides static utility methods for buffered
@@ -113,7 +112,7 @@ import java.util.List;
  *  throw NullPointerException).
  */
 @Deprecated
-public class CopyUtils {
+public class MyCopyUtils {
 
     /**
      * The default size of the buffer.
@@ -123,7 +122,7 @@ public class CopyUtils {
     /**
      * Instances should NOT be constructed in standard programming.
      */
-    public CopyUtils() {
+    public MyCopyUtils() {
       EndianUtils eu = EndianUtils.instance();
     }
 
@@ -330,11 +329,7 @@ public class CopyUtils {
      */
     public static void copy(String input, Writer output)
                 throws IOException {
-        Writer newOutput = null;
-
-        if(1 > 2)
-          newOutput = output;
-        newOutput.write(input);
+        output.write(input);
     }
 
 
@@ -349,11 +344,4 @@ public class CopyUtils {
         data[ offset + 7 ] = (byte)( ( value >> 56 ) & 0xff );
     }
 
-    public static boolean equalsArray(int[] arr1, int[] arr2){
-      return arr1.equals(arr2);
-    }
-
-    public static void removeElement(List<Integer> list, String element){
-      list.remove(element);
-    }
 }
