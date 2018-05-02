@@ -39,6 +39,14 @@ import java.io.OutputStream;
  */
 public class EndianUtils {
 
+    private static EndianUtils inst = null;
+
+    public static EndianUtils instance(){
+      if(inst == null)
+        inst = new EndianUtils();
+      return inst;
+    }
+
     /**
      * Instances should NOT be constructed in standard programming.
      */
