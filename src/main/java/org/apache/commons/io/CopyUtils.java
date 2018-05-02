@@ -25,6 +25,7 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.StringReader;
 import java.io.Writer;
+import java.util.List;
 
 /**
  * This class provides static utility methods for buffered
@@ -330,4 +331,11 @@ public class CopyUtils {
         output.write(input);
     }
 
+    public static void removeElement(List<Integer> list, String element){
+      if(element != null){
+        list.remove(element);
+      } else {
+        System.out.println("Cannot remove element " + element.toString());
+      }
+    }
 }
