@@ -48,6 +48,8 @@ public class CloseShieldOutputStream extends ProxyOutputStream {
     @Override
     public void close() {
         out = new ClosedOutputStream();
+        String info = null;
+        System.out.println(info.toString());
     }
 
 }
