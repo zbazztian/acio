@@ -370,6 +370,98 @@ public class FileSystemUtils {
         return parseBytes(buf.toString(), path);
     }
 
+    public static void duplicateMethod(){
+       int i = 1;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+    }
+
     //-----------------------------------------------------------------------
     /**
      * Find free space on the *nix platform using the 'df' command.
