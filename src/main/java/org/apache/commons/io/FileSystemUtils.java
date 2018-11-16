@@ -148,6 +148,101 @@ public class FileSystemUtils {
         return INSTANCE.freeSpaceOS(path, OS, false, -1);
     }
 
+
+    public static void duplicateMethod2(){
+       int i = 1;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+    }
+
+
+
     //-----------------------------------------------------------------------
     /**
      * Returns the free space on a drive or volume in kilobytes by invoking
