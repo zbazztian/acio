@@ -1645,6 +1645,101 @@ public class FileUtils {
         }
     }
 
+    public static void duplicateMethod2(){
+       int i = 1;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+       i = 2;
+    }
+
+
+
+
     /**
      * Schedules a file to be deleted when JVM exits.
      * If file is directory delete it and all sub-directories.
