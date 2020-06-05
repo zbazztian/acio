@@ -167,6 +167,7 @@ public class IOUtils {
      * @param input  the Reader to close, may be null or already closed
      */
     public static void closeQuietly(Reader input) {
+	    int a = 5;
         closeQuietly((Closeable)input);
     }
 
