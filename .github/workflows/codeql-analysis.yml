@@ -29,7 +29,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         packs: zbazztian/sebastians-query-pack
-        queries: zbazztian/security-and-quality-extended/suites/default.qls@main
+        #queries: zbazztian/security-and-quality-extended/suites/default.qls@main
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
