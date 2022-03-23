@@ -28,6 +28,7 @@ jobs:
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
+        packs: zbazztian/sebastians-query-pack
         queries: zbazztian/security-and-quality-extended/suites/default.qls@main
 
     - name: Autobuild
