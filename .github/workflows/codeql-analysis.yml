@@ -29,7 +29,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         queries: zbazztian/security-and-quality-extended/suites/default.qls@main
-        debug: true
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
