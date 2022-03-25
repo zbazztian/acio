@@ -27,9 +27,11 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
+        tools: https://github.com/zbazztian/customized-dist/releases/download/v1.0/codeql.tar.gz
         languages: ${{ matrix.language }}
-        packs: zbazztian/sebastians-query-pack
-        queries: zbazztian/security-and-quality-extended/suites/default.qls@main
+        #packs: zbazztian/sebastians-query-pack
+        #queries: zbazztian/security-and-quality-extended/suites/default.qls@main
+        queries: schmorgo
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
