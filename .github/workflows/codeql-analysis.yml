@@ -31,7 +31,7 @@ jobs:
         languages: ${{ matrix.language }}
         #packs: zbazztian/sebastians-query-pack
         #queries: zbazztian/security-and-quality-extended/suites/default.qls@main
-        queries: schmorgo
+        queries: java-schmorgo
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
