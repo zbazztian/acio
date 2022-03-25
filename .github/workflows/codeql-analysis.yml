@@ -27,7 +27,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
-        tools: https://github.com/zbazztian/customized-dist/releases/download/v1.0/codeql-bundle-linux64.tar.gz
+        tools: https://github.com/github/codeql-action/releases/download/codeql-bundle-20220311/codeql-bundle-linux64.tar.gz
         languages: ${{ matrix.language }}
         #packs: zbazztian/sebastians-query-pack
         #queries: zbazztian/security-and-quality-extended/suites/default.qls@main
