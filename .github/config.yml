@@ -3,5 +3,5 @@ disable-default-queries: false
 packs:
   java:
     - zbazztian/sebastians-query-pack
-queries:
-  - uses: ./.github/mypack/suite.qls
+#queries:
+  #- uses: ./.github/mypack/suite.qls
