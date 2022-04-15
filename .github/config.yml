@@ -4,4 +4,4 @@ packs:
   java:
     - zbazztian/sebastians-query-pack
 queries:
-  - uses: .github/mypack/suite.qls
+  - uses: ./.github/mypack/suite.qls
